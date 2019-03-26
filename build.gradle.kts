@@ -4,6 +4,10 @@ plugins {
     id("org.beryx.jlink") version "2.7.0"
 }
 
+jlink {
+    addOptions("--bind-services")
+}
+
 repositories {
     mavenCentral()
 }
